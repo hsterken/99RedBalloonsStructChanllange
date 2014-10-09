@@ -26,7 +26,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="8ef-Cb-GTu"/>
-                                    <barButtonItem title="Next Balloon" id="dHB-AS-2hz"/>
+                                    <barButtonItem title="Next Balloon" id="dHB-AS-2hz">
+                                        <connections>
+                                            <action selector="nextBalloonBarButtonPressed:" destination="BYZ-38-t0r" id="ja3-fi-Ksa"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="623" width="375" height="44.5"/>
@@ -58,6 +62,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="myBalloonsLabel" destination="zYI-Fc-UZL" id="mZO-GC-gWh"/>
+                        <outlet property="myImageView" destination="qKV-4y-hwD" id="tuz-vg-nv2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
